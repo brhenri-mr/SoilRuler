@@ -2,7 +2,7 @@ import pytesseract
 from pdf2image import convert_from_path
 from PIL import Image
 import pandas as pd
-from rex.util import pre_tratamento, refino
+from rex.util import pre_tratamento
 from rex.engine import creatRuler
 
 df = {}
@@ -42,8 +42,6 @@ text = [pre_tratamento(element) for element in text]
 #refino(text)
 
 text_aux = text.copy()
-
-
 
 
 for element in text:
